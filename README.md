@@ -1,6 +1,15 @@
 Simplei18nBundle
 ================
 
+#Install with composer
+
+    {
+        "require": {
+            "juanber84/simplei18nbundle": "dev-master"
+        }
+    }
+
+
 Compatible with http://symfony.com/doc/current/cookbook/session/locale_sticky_session.html
 
 Add in your app/AppKernel.php
