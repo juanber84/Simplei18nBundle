@@ -1,0 +1,3 @@
+juanber84_simplei18n_changelocale:
+    pattern:  /locale/{locale}
+    defaults: { _controller: Juanber84Simplei18nBundle:Default:changelocale }

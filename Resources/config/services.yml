@@ -1,0 +1,13 @@
+parameters:
+#    juanber84_simplei18n.example.class: Juanber84\Bundle\Simplei18nBundle\Example
+
+services:
+    acme.twig.simplei18n_extension:
+        class: Juanber84\Bundle\Simplei18nBundle\Twig\Simplei18nExtension
+        arguments: 
+                    - @service_container        
+        tags:
+                - { name: twig.extension }
+#    juanber84_simplei18n.example:
+#        class: %juanber84_simplei18n.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
