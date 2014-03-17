@@ -1,7 +1,7 @@
 Simplei18nBundle
 ================
 
-#Install with composer
+###Install with composer
 
     {
         "require": {
