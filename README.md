@@ -1,6 +1,8 @@
 Simplei18nBundle
 ================
 
+Compatible with http://symfony.com/doc/current/cookbook/session/locale_sticky_session.html
+
 Add in your app/AppKernel.php
 
 ```php
