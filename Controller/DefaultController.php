@@ -10,7 +10,7 @@ class DefaultController extends Controller
     public function changelocaleAction($locale)
     {
         $session = $this->get("session");
-        $session->set("language", $locale);
+        $session->set("_locale", $locale);
         $referer = $this->get('request')->headers->get('referer');
         return new RedirectResponse($referer);
     }

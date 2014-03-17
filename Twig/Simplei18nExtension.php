@@ -55,10 +55,10 @@ class Simplei18nExtension extends \Twig_Extension
     {
         $session = $this->container->get('session');
         if ($language == null) {
-            if (!$session->get('language')) {
-                $session->set('language','en');
+            if (!$session->get('_locale')) {
+                $session->set('_locale','en');
             }
-            $language = $session->get('language');
+            $language = $session->get('_locale');
         }
  
         if ($language) {
