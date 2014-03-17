@@ -32,3 +32,18 @@ Add in your app/routing.yml
 	juanber84_simplei18n:
 	    resource: "@Juanber84Simplei18nBundle/Resources/config/routing.yml"
 	    prefix:   /
+
+###Use it
+
+Put the next twig code in the header of your layout:
+
+    {{ language('es') }} // If you used this it will convert to the language which you've inserted
+    {{ language() }}     // If you used this it will convert to the language which _locale var session
+
+Use the widget where you would show it:
+
+    {{ simplei18n(['es', 'en', 'pt', 'it'] )|raw }}
+
+Make your custom widget using the path:
+
+    {{ path('juanber84_simplei18n_changelocale', {'locale': 'es'}) }}
