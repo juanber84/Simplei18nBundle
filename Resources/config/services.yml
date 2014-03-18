@@ -2,7 +2,7 @@ parameters:
 #    juanber84_simplei18n.example.class: Juanber84\Bundle\Simplei18nBundle\Example
 
 services:
-    acme.twig.simplei18n_extension:
+    juanber84.twig.simplei18n_extension:
         class: Juanber84\Bundle\Simplei18nBundle\Twig\Simplei18nExtension
         arguments: 
                     - @service_container        
